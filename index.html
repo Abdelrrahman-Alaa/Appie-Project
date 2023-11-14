@@ -3,21 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Appie</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
-    <header>
-      <div class="container">
+    <section class="section-hero">
+      <header class="">
         <nav class="nav">
           <div class="header-links">
-            <img src="" alt="Appie-logo" />
-            <!-- logo icon-->
+            <img src="Images/logo.png" alt="Appie-logo" />
             <ul class="nav-links">
-              <a href=""><li>Home</li></a>
+              <a href=""
+                ><li>
+                  Home
+                  <ion-icon
+                    class="nav-link-icon"
+                    name="chevron-down-outline"
+                  ></ion-icon></li
+              ></a>
               <a href=""><li>Service</li></a>
-              <a href=""><li>Pages</li></a>
-              <a href=""><li>News</li></a>
+              <a href=""
+                ><li>
+                  Page
+                  <ion-icon
+                    class="nav-link-icon"
+                    name="chevron-down-outline"
+                  ></ion-icon></li
+              ></a>
+              <a href=""
+                ><li>
+                  News
+                  <ion-icon
+                    class="nav-link-icon"
+                    name="chevron-down-outline"
+                  ></ion-icon></li
+              ></a>
               <a href=""><li>Contact</li></a>
             </ul>
           </div>
@@ -25,31 +59,178 @@
             <a href="" class="get-start">Get Start</a>
           </div>
         </nav>
-      </div>
-    </header>
-    <main>
-      <section class="section-hero">
-        <div class="container grid grid-2--cols">
-          <h1 class="hero-heading">
-            Ready to launch your app in one, <span>Application</span>
-          </h1>
-          <p class="hero-sub">Find the best application in the Appie</p>
-          <div class="hero-input">
-            <!-- Message icon -->
-            <input type="text" />
-            <!-- l-Arrow icon -->
-          </div>
-          <div class="hero-feedback">
-            <div class="feedback-imgs">
-              <!-- 4 imgs -->
+      </header>
+      <main>
+        <div class="grid grid-2--cols container">
+          <div class="hero-left">
+            <h1 class="hero-heading">
+              Ready to launch your app in one, <span>Application</span>
+            </h1>
+            <p class="hero-sub">Find the best application in the Appie</p>
+            <div class="hero-input">
+              <ion-icon class="mail-icon" name="mail-outline"></ion-icon>
+              <p class="input-mail">Info@appie.com</p>
+              <ion-icon
+                class="input-icon"
+                name="arrow-forward-outline"
+              ></ion-icon>
             </div>
-            <div class="feedback">
-              <h2>30k</h2>
-              <p>Feedback</p>
+            <div class="hero-feedback">
+              <div class="feedback-imgs">
+                <img src="Images/people/customer-1.jpg" alt="customer-1" />
+                <img src="Images/people/customer-2.jpg" alt="customer-2" />
+                <img src="Images/people/customer-3.jpg" alt="customer-3" />
+                <img src="Images/people/customer-4.jpg" alt="customer-4" />
+              </div>
+              <div class="feedback">
+                <h2>30k</h2>
+                <p>Feedback</p>
+              </div>
             </div>
           </div>
+          <img
+            class="hero-img"
+            src="Images/hero.png"
+            alt="A hand carries phone "
+          />
         </div>
-      </section>
-    </main>
+      </main>
+    </section>
+    <section class="how-it-works container">
+      <div class="features-header">
+        <div class="header">
+          <h2 class="primary-header">How does it works</h2>
+          <p class="sub-header">
+            The full monty spiffing good time nobiggie cack grub fantastic
+          </p>
+        </div>
+        <a href="" class="oval-button">
+          <p class="button-text">View all features</p>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
+      </div>
+
+      <div class="features-row">
+        <div class="feature-item">
+          <div class="feature-icon-background feature-1">
+            <ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </div>
+          <h3 class="feature-header">Fast and intuitive</h3>
+          <p class="sub-header">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            ipsam odio aspernatur laborum porro eius veritatis maxime.
+          </p>
+          <a href="" class="feature-link">
+            Read more<ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </a>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-background feature-2">
+            <ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </div>
+          <h3 class="feature-header">Fast and intuitive</h3>
+          <p class="sub-header">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Soluta ipsam
+            odio aspernatur laborum porro eius veritatis maxime.
+          </p>
+          <a href="" class="feature-link">
+            Read more<ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </a>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-background feature-3">
+            <ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </div>
+          <h3 class="feature-header">Fast and intuitive</h3>
+          <p class="sub-header">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            ipsam odio aspernatur laborum porro eius veritatis maxime.
+          </p>
+          <a href="" class="feature-link">
+            Read more
+            <ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="features-row">
+        <div class="feature-item">
+          <div class="feature-icon-background feature-4">
+            <ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </div>
+          <h3 class="feature-header">Fast and intuitive</h3>
+          <p class="sub-header">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            ipsam odio aspernatur laborum porro eius veritatis maxime.
+          </p>
+          <a href="" class="feature-link">
+            Read more<ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </a>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-background feature-5">
+            <ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </div>
+          <h3 class="feature-header">Fast and intuitive</h3>
+          <p class="sub-header">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            ipsam odio aspernatur laborum porro eius veritatis maxime.
+          </p>
+          <a href="" class="feature-link">
+            Read more<ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </a>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-background feature-6">
+            <ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </div>
+          <h3 class="feature-header">Fast and intuitive</h3>
+          <p class="sub-header">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            ipsam odio aspernatur laborum porro eius veritatis maxime.
+          </p>
+          <a href="" class="feature-link">
+            Read more
+            <ion-icon
+              class="feature-icon"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
